@@ -2,7 +2,12 @@ package edu.io;
 
 public class Board {
     private final Token[][] board;
-    private final int size;
+    private static int DEFAULT_SIZE = 8;
+    public final int size;
+
+    public Board() {
+        this(DEFAULT_SIZE);
+    }
 
     public Board(int size) {
 
@@ -30,6 +35,7 @@ public class Board {
             System.out.println();
         }
     }
+
 
     public void placeToken(int col, int row, Token token) {
         board[row][col] = token;

@@ -1,7 +1,7 @@
 package edu.io;
 
 public class Token {
-    private final String label;
+    public final String label;
 
     public Token(String label) {
         if (label == null || label.isBlank()) {
