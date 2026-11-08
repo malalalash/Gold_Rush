@@ -31,4 +31,12 @@ public class Board {
             System.out.println();
         }
     }
+
+    public void placeToken(int col, int row, Token token) {
+        board[col][row] = token;
+    }
+
+    public Token peekToken(int col, int row) {
+        return board[col][row];
+    }
 }

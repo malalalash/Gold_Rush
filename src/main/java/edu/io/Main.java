@@ -11,7 +11,13 @@ public class Main {
         System.out.println(token3.getLabel());
 
         Board board = new Board(5);
-board.display();
+        board.display();
+
+        board.placeToken(4, 4, token2);
+        Token tokenToPeek = board.peekToken(4, 4);
+
+        System.out.println(tokenToPeek.getLabel());
+        board.display();
 
     }
 }
