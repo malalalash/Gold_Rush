@@ -13,11 +13,13 @@ public class Main {
         Board board = new Board(5);
         board.display();
 
-        board.placeToken(4, 4, token2);
-        Token tokenToPeek = board.peekToken(4, 4);
+        board.placeToken(3, 1, token2);
+        Token tokenToPeek = board.peekToken(3, 1);
 
         System.out.println(tokenToPeek.getLabel());
         board.display();
+
+
 
     }
 }
