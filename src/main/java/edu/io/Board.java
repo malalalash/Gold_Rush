@@ -12,10 +12,10 @@ public class Board {
         this.size = size;
         this.board = new Token[size][size];
 
-        createBoard();
+        clean();
     }
 
-    private void createBoard() {
+    private void clean() {
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 board[i][j] = new Token("\u30FB");
@@ -23,7 +23,7 @@ public class Board {
         }
     }
 
-    public void drawBoard() {
+    public void display() {
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 System.out.print(board[i][j].getLabel() + " ");

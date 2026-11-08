@@ -11,7 +11,7 @@ public class Main {
         System.out.println(token3.getLabel());
 
         Board board = new Board(5);
-board.drawBoard();
+board.display();
 
     }
 }
