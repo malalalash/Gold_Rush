@@ -18,8 +18,5 @@ public class Main {
 
         System.out.println(tokenToPeek.getLabel());
         board.display();
-
-
-
     }
 }
