@@ -4,13 +4,16 @@ import edu.io.token.EmptyToken;
 import edu.io.token.Label;
 import edu.io.token.Token;
 
+import java.util.Random;
+
 public class Board {
     public record Coords(int col, int row) {
     }
 
     private final Token[][] board;
-    private static int DEFAULT_SIZE = 8;
+    private static final int DEFAULT_SIZE = 8;
     public final int size;
+    private final Random random = new Random();
 
     public Board() {
         this(DEFAULT_SIZE);
