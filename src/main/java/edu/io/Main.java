@@ -1,5 +1,7 @@
 package edu.io;
 
+import edu.io.tokens.Token;
+
 public class Main {
     public static void main(String[] args) {
         Token token1 = new Token("\u30FB");

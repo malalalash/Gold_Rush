@@ -1,4 +1,4 @@
-package edu.io;
+package edu.io.tokens;
 
 public class Token {
     public final String label;

@@ -1,5 +1,7 @@
 package edu.io;
 
+import edu.io.tokens.Token;
+
 public class Board {
     private final Token[][] board;
     private static int DEFAULT_SIZE = 8;
