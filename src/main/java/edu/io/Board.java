@@ -1,8 +1,13 @@
 package edu.io;
 
+import edu.io.token.EmptyToken;
+import edu.io.token.Label;
 import edu.io.token.Token;
 
 public class Board {
+    public record Coords(int col, int row) {
+    }
+
     private final Token[][] board;
     private static int DEFAULT_SIZE = 8;
     public final int size;
@@ -24,7 +29,8 @@ public class Board {
     public void clean() {
         for (int row = 0; row < size; row++) {
             for (int col = 0; col < size; col++) {
-                board[row][col] = new Token("\u30FB");
+                board[row][col] = new EmptyToken() {
+                };
             }
         }
     }
