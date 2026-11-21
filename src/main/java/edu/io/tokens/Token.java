@@ -1,11 +1,11 @@
 package edu.io.tokens;
 
 public class Token {
-    public final String label;
+    private final String label;
 
     public Token(String label) {
         if (label == null || label.isBlank()) {
-            throw new IllegalArgumentException("Etykieta żetonu nie może być pusta!");
+            throw new IllegalArgumentException("label cannot be empty");
         }
         this.label = label;
     }
