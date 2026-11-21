@@ -8,6 +8,7 @@ public class PlayerToken extends Token{
     private int row;
 
     public PlayerToken(Board board, int col, int row) {
+        super(Label.PLAYER_TOKEN_LABEL);
         this.board = board;
         this.col = col;
         this.row = row;
