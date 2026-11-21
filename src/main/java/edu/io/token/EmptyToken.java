@@ -1,4 +1,4 @@
 package edu.io.token;
 
-public class EmptyToken {
+public class EmptyToken extends Token {
 }

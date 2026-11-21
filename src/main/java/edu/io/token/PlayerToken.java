@@ -2,7 +2,7 @@ package edu.io.token;
 
 import edu.io.Board;
 
-public class PlayerToken {
+public class PlayerToken extends Token{
     private final Board board;
     private int col;
     private int row;

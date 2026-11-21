@@ -1,4 +1,4 @@
 package edu.io.token;
 
-public class GoldToken {
+public class GoldToken extends Token{
 }
