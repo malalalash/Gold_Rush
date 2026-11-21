@@ -1,6 +1,6 @@
 package edu.io;
 
-import edu.io.tokens.Token;
+import edu.io.token.Token;
 
 public class Main {
     public static void main(String[] args) {

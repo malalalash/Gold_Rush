@@ -1,4 +1,4 @@
-package edu.io.tokens;
+package edu.io.token;
 
 public class PlayerToken {
 }
