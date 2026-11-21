@@ -10,7 +10,7 @@ public abstract class Token {
         this.label = label;
     }
 
-    public String getLabel() {
+    public String label() {
         return label;
     }
 }

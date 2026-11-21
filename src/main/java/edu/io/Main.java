@@ -11,7 +11,7 @@ public class Main {
 
         Token tokenToPeek = board.peekToken(3, 1);
 
-        System.out.println(tokenToPeek.getLabel());
+        System.out.println(tokenToPeek.label());
         board.display();
     }
 }

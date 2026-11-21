@@ -1,7 +1,6 @@
 package edu.io;
 
 import edu.io.token.EmptyToken;
-import edu.io.token.Label;
 import edu.io.token.Token;
 
 import java.util.Random;
@@ -43,7 +42,7 @@ public class Board {
     public void display() {
         for (int row = 0; row < size; row++) {
             for (int col = 0; col < size; col++) {
-                System.out.print(board[row][col].getLabel() + " ");
+                System.out.print(board[row][col].label() + " ");
             }
             System.out.println();
         }
@@ -57,4 +56,8 @@ public class Board {
     public Token peekToken(int col, int row) {
         return board[row][col];
     }
+
+    public Coords placeForPlayer() {
+        return new Coords(0,0);
+    };
 }
